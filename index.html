@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="img/va.png" alt="logo" class="logo" />
+    </header>
+    <main>
+      <section id="seccion-uno">
+        
+        <textarea
+          id="mensajeEntrada"
+          class="mensaje-entrada"
+          placeholder="Ingresa aquí tu mensaje"
+          autofocus
+        ></textarea>
+
+        <h6 class="info">Sólo letras minúsculas sin acentos</h6>
+
+        <div class="btn-container">
+          <button class="btn-cifrar" id="btnCifrar">Cifrar</button>
+          <button class="btn-descifrar" id="btnDescifrar">Descifrar</button>
+        </div>
+      </section>
+
+      <section id="seccion-2">
+        <textarea
+          class="mensaje-salida"
+          id="mensajeSalida"
+          placeholder="Tu mensaje aparecerá aquí"
+        ></textarea>
+        <br/>
+        <button id="btnCopiar" class="copiar">Copiar</button>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="dev-info">
+        Developed by Victor Avila
+        <a
+          class="dev-info"
+          href="https://www.linkedin.com/in/vhag/"
+          target="_blank"
+          ><img src="img/li.png" alt="linkedin" class="redes" /></a
+        ><a class="dev-info" href="https://github.com/AGVH" target="_blank"
+          ><img class="redes" src="img/gh.png" alt="github"
+        /></a>
+      </p>
+    </footer>
+
+    <script src="decodificador.js"></script>
+  </body>
+</html>
